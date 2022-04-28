@@ -1,0 +1,142 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #762f8e;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/** Globales **/
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+    
+}
+.nomargen {
+    margin: 0;
+}
+.centro {
+    display: flex;
+    justify-content: center;
+    
+}
+.centrar{
+    text-align: center;
+    
+}
+.center{
+    margin-top: 10rem;
+}
+.azul{
+    background-color:rgb(88, 88, 226);
+}
+.verde{
+    background-color:rgb(129, 226, 124);
+}
+.naranja{
+    background-color:rgb(202, 111, 98);
+}
+.azulc{
+    background-color:rgb(88, 201, 226);
+}
+.amarillo{
+    background-color:rgb(212, 226, 88);
+}
+button {
+    width: 10rem;
+}
+
+a {
+    text-decoration: none;
+    color:var(--blanco);
+    margin-top: 1rem;
+   text-align: center;
+}
+a:hover{
+    color:var(--primario);
+}
+
+h1 {
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+}
+img{ 
+    margin-top: 2rem;
+    height: 10rem;
+}
+
+header {
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-position: center;
+}
+.navegacion {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .navegacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    a{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .center{
+        margin-top: 25vh;
+    }
+}
+.footer{
+    background-color: var(--negro);
+}
+
+/** programas **/
+.programas {
+    background-color: var(--negro);
+}
+.im{
+    height: 40vh;
+
+}
+.cont {
+    padding: 2rem;
+    margin: 2rem;
+}
+.datos {
+    display: flex;
+    flex-direction: column;
+}
+.label {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 2rem;
+}
+select{
+    margin-bottom: 1rem;
+}
+.lista{
+    background-color: white;
+    padding: 1rem;
+    list-style: none;
+}
+li {
+    text-align: center;
+    
+}

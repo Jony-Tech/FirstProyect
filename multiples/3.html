@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Proyecto</title>
+</head>
+<body class="programas">
+    <div class="contenedor">
+        <nav class="navegacion">
+            <a href="../index.html">Inicio</a>
+            <a href="1.html">Programa 1</a>
+            <a href="2.html">Programa 2</a>
+            <a href="3.html">Programa 3</a>
+            <a href="4.html">Programa 4</a>
+            <a href="5.html">Programa 5</a>
+        </nav>
+    </div>
+
+    <div class="contenedor">
+        <h1 class="centrar">Calculadora básica</h1>
+        <div class="centro">
+            <div class="cont naranja">
+
+                <h3>Ingresa dos números y luego escoge la operación</h3>
+                <div class="datos">
+                    <div class="label">
+                        <label>Número 1:</label>
+                        <input id="1" type="number">
+                    </div>
+                <div class="datos">
+                        <div class="label">
+                            <label>Número 2:</label>
+                            <input id="2" type="number">
+                        </div>
+                </div>
+                <div class="datos">
+                    <label>Operación:</label>
+                    <select id="o">
+                        <option value="s">Suma</option>
+                        <option value="r">Resta</option>
+                        <option value="m">Multiplicación</option>
+                        <option value="d">División</option>
+                    </select>
+                </div>
+                <button onclick="operacion()">Aceptar</button>
+            </div>
+        </div>
+
+        <script src="js/3.js"></script>
+    </div>
+
+    </div>
