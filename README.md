@@ -1,2 +1,1 @@
-# primersemestreUniversidad
-Es mi primer proyecto de la universidad, individual
+# First project of the first semester
